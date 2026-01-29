@@ -3,7 +3,7 @@ import NavBar from "./NavBar";
 const Hero = () => {
   return (
     <section className="bg-black-100">
-      <div className="absolute z-0 inset-0 w-full h-screen bg-[url('/public/assets/hero.png')] bg-cover bg-center grayscale opacity-30 mix-blend-lighten"></div>
+      <div className="absolute z-0 inset-0 w-full h-screen bg-[url('/assets/hero.png')] bg-cover bg-center grayscale opacity-30 mix-blend-lighten"></div>
       <div className="relative z-1 inset-0 h-screen">
         <NavBar  links={navLinks}/>
         <div className="absolute inset-1/2 text-center -translate-x-1/2 -translate-y-1/2  w-fit h-fit  ">

@@ -1,9 +1,9 @@
 const About = () => {
   return (
-    <section className="min-h-screen bg-black-200 flex p-8 gap-4 items-center overflow-hidden">
+    <section className="min-h-screen max-sm:flex-col bg-black-200 flex p-8 gap-12 items-center overflow-hidden">
       <div>
         <span className="text-main uppercase block mb-4">my approach</span>
-        <h2 className="text-7xl mb-4">
+        <h2 className="text-7xl max-sm:text-4xl mb-4">
           Beyond templates. <br /> Building <br />{" "}
           <span className="italic font-bold">experiences.</span>
         </h2>
@@ -18,7 +18,7 @@ const About = () => {
         after:absolute after:content-[''] after:rounded-full after:left-1/2 after:top-1/2 after:translate-x-[-50%] after:translate-y-[-50%] after:w-[235%] after:aspect-square after:border-gray after:border-[0.5px] "
         >
           <img
-            src="/public/assets/profile.jpg"
+            src="/assets/profile.jpg"
             alt="profile"
             className="object-fit rounded-full aspect-square"
           />

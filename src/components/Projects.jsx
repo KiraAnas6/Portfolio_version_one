@@ -40,14 +40,14 @@ const Projects = () => {
       </h1>
       <div className="container">
         {projects_two.map(({name , description , img}) => {
-          return <div className="project-card flex gap-2 border-t-2 p-4">
-            <div className="flex flex-col justify-between">
+          return <div className="project-card flex gap-2 border-t-2 p-4 overflow-hidden">
+            <div className="flex flex-col justify-between w-48">
               <h3 className="text-gold font-bold text-2xl">{name}</h3>
               <p className="max-w-[30vw] text-xs">{description}</p>
             </div>
             <img
               src={`/assets/projects/${img}`}
-              className="w-48"
+              className=""
               alt="project img"
             />
           </div>;

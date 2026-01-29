@@ -50,7 +50,7 @@ const Certifications = () => {
 
   return (
     <>
-      <h1 className="text-5xl max-sm:text-3xl font-bold m-8 uppercase relative w-fit before:absolute before:w-[50%] before:h-[0.5px] before:bg-gold before:bottom-[-0px] before:left-0">
+      <h1 className="text-5xl max-sm:text-2xl font-bold m-8 uppercase relative w-fit before:absolute before:w-[50%] before:h-[0.5px] before:bg-gold before:bottom-[-0px] before:left-0">
         My <span className="text-main">Certifications</span> :
       </h1>
       <section className="relative bg-inherit overflow-hidden mask-fade">

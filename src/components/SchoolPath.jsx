@@ -16,8 +16,11 @@ const SchoolPath = () => {
         <div className="container py-4 flex-1 w-full">
           <div onMouseEnter={() => setImg(0)} className="group flex items-center gap-4 p-8 mb-4">
             <span
-              className="block relative border-main border text-main font-bold cursor-pointer transition-all transition-300 group-hover:bg-main group-hover:text-white w-12 rounded-full aspect-square flex items-center justify-center
-                before:absolute before:w-[0.5px] before:h-[80px] before:bg-gold before:top-[100%] before:left-1/2 before:translate-x-[-50%]"
+              className="block relative border-main border text-main font-bold cursor-pointer transition-all 
+              transition-300 group-hover:bg-main group-hover:text-white w-12 rounded-full 
+              aspect-square flex items-center justify-center
+              before:absolute before:w-[0.5px] before:h-[80px] max-sm:before:h-[98px]
+              before:bg-gold before:top-[100%] before:left-1/2 before:translate-x-[-50%]"
             >
               01
             </span>
@@ -49,7 +52,7 @@ const SchoolPath = () => {
             </div>
           </div>
         </div>
-        <div className="w-[47vw] overflow-hidden rounded-3xl">
+        <div className="w-[47vw] max-sm:w-full overflow-hidden rounded-3xl">
           <img className="w-full h-full object-fit" src={handleImgChange()} alt="img" />
         </div>
       </div>
