@@ -20,7 +20,7 @@ const MiniFooter = ({containerClass = ""}) => {
         &copy; 2026 Anas Ezzine - All Rights Reserved.{" "}
       </span>
       <a href="#" className="w-12 aspect-square rounded-full flex items-center justify-center bg-white">
-        <img className="invert" src="/public/assets/arrow-up.png" alt="arrow up" />
+        <img className="invert" src="/assets/arrow-up.png" alt="arrow up" />
       </a>
     </footer>
   );
