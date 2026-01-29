@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes translate {
+  from {
+    transform: translateY(calc(12px));
+  }
+
+  to {
+    transform: translateY(calc(80px));
+  }
+}
+
+@layer utulities {
+  html {
+    scroll-behavior: smooth;
+  }
+  .hero-text-outline {
+    -webkit-text-stroke: 1px #ffffff66;
+    font-family: Arial, Helvetica, sans-serif;
+    color: transparent;
+  }
+
+  .hero-icon-animation {
+    animation: translate 1s infinite linear alternate;
+  }
+
+  .scroll-hidden {
+    scrollbar-width: none;
+  }
+
+  .mask-fade {
+    mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  }
+  .mask-fade-bottom {
+    background: linear-gradient(to bottom,  #000000b4 , #0000005e 65%, transparent);
+  }
+  .mask-fade-top {
+    background: linear-gradient(to top,  #000000 , #00000033 15%, transparent 20% , transparent);
+  }
+}
