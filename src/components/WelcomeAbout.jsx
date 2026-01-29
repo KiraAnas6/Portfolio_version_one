@@ -9,7 +9,7 @@ const WelcomeAbout = () => {
         <div className="w-full h-full mask-fade-top absolute inset-0 z-[9]"></div>
         <div className="absolute  mask-fade-top inset-0 w-full h-full opacity-100">
           <img
-            src="/public/assets/about-hero.jpg"
+            src="/assets/about-hero.jpg"
             className="w-full h-full object-fit"
             alt="about img"
           />

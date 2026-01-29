@@ -8,7 +8,7 @@ const MiniFooter = ({containerClass = ""}) => {
           <span key={`${link}-${index}`}>
             <a href={link}>
               <img
-                src={`/public/assets/${img}`}
+                src={`/assets/${img}`}
                 key={link}
                 alt="social media"
               />

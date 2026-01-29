@@ -46,7 +46,7 @@ const Projects = () => {
               <p className="max-w-[30vw] text-xs">{description}</p>
             </div>
             <img
-              src={`/public/assets/projects/${img}`}
+              src={`/assets/projects/${img}`}
               className="w-48"
               alt="project img"
             />

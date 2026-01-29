@@ -3,7 +3,7 @@ import { useState } from "react";
 const SchoolPath = () => {
     const [img , setImg] = useState(0)
     const handleImgChange = () => {
-        const imgs = [`/public/assets/30juillet.webp` ,`/public/assets/estbm.webp` ] 
+        const imgs = [`/assets/30juillet.webp` ,`/assets/estbm.webp` ] 
         return imgs[img]
     }
   return (

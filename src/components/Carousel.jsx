@@ -69,7 +69,7 @@ const Certifications = () => {
                 >
                   <img
                     className="object-fit aspect-[16/10] w-full"
-                    src={`/public/assets/${img}`}
+                    src={`/assets/${img}`}
                     alt={name}
                   />
                 </div>

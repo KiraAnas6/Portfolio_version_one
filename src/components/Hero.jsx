@@ -20,7 +20,7 @@ const Hero = () => {
           </p>
           <div className="animation relative h-24 w-[0.5px] bg-main mx-auto mt-4">
             <div className="absolute -inset-[12px] -left-[11.8px] hero-icon-animation w-[24px] w-fit h-fit">
-                <img src="/public/assets/arrow-down.png" className="object-fit" width={24} height={24} alt="arrow down" />
+                <img src="/assets/arrow-down.png" className="object-fit" width={24} height={24} alt="arrow down" />
             </div>
           </div>
         </div>
