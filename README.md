@@ -96,7 +96,6 @@ portfolio/
 - Profile section with animated rings
 
 ### Contact (`/contact`)
-- Contact form with validation
 - Email and location information
 - Social media links
 - Animated floating background lines
@@ -155,17 +154,6 @@ This project can be deployed to:
 - **Netlify**
 - **GitHub Pages**
 - Any static hosting service
-
-## 📝 Environment Variables
-
-No environment variables required for basic functionality.
-
-For contact form email integration, you may need:
-```
-VITE_EMAILJS_SERVICE_ID=your_service_id
-VITE_EMAILJS_TEMPLATE_ID=your_template_id
-VITE_EMAILJS_PUBLIC_KEY=your_public_key
-```
 
 ## 🎨 Customization
 
