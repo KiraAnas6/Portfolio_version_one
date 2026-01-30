@@ -62,7 +62,7 @@ const Certifications = () => {
             return (
               <div
                 key={name}
-                className={`project-card bg-black-200 rounded-lg relative w-[70vw] md:w-[40vw] h-[80vh] group transition-all transition-300 ${index  % 2 != 0 ? "top-16" : ""}`}
+                className={`project-card bg-black-200 rounded-lg relative w-[70vw] md:w-[40vw] h-[80vh] max-sm:h-fit group transition-all transition-300 ${index  % 2 != 0 ? "top-16" : ""}`}
               >
                 <div
                   className={`grayscale group-hover:filter-none max-sm:filter-none `}
@@ -73,7 +73,7 @@ const Certifications = () => {
                     alt={name}
                   />
                 </div>
-                <div className="bg-black-200 p-6 max-sm:left-0 max-sm:w-full max-sm:opacity-0 max-sm:text-small max-sm:hover:opacity-100 transition-all">
+                <div className="bg-black-200 p-6 max-sm:left-0 max-sm:w-full max-sm:text-small transition-all">
                   <span className="mt-2 text-gold block font-bold">
                     0{index + 1} - {tag}
                   </span>
