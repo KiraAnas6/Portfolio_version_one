@@ -29,6 +29,7 @@ const Certifications = () => {
         {certifications.map(({ img, name, description, tags }) => (
           <div
             className={`cert-card translate-x-20 opacity-0 relative p-4 bg-[#393947] overflow-hidden rounded-xl group`}
+            key={name}
           >
             <div className="overflow-hidden rounded-xl">
               <img

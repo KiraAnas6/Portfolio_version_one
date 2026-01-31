@@ -59,7 +59,8 @@ const Contact = () => {
               FIND ME
               <div className="flex gap-2 items-center mt-4 max-md:justify-center">
                 {footerLinks.map((link) => (
-                  <div className="w-12 aspect-square rounded-lg bg-black-200 flex items-center justify-center">
+                  <div className="w-12 aspect-square rounded-lg bg-black-200 flex items-center justify-center"
+                  key={link.img}>
                     <img src={`/assets/${link.img}`} alt={link.link} />
                   </div>
                 ))}
