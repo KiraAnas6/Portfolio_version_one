@@ -1,8 +1,8 @@
 import { footerLinks } from "../constants";
 
-const MiniFooter = ({containerClass = ""}) => {
+const MiniFooter = ({id , containerClass = ""}) => {
   return (
-    <footer className={`border-t-2 border-t-white p-12 flex items-center justify-between w-[90%] mx-auto ${containerClass}`}>
+    <footer id={id} className={`border-t-2 border-t-white p-12 flex items-center justify-between w-[90%] mx-auto ${containerClass}`}>
       <div className="flex gap-2">
         {footerLinks.map(({ img, link } , index) => (
           <span key={`${link}-${index}`}>

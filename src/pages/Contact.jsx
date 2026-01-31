@@ -3,7 +3,16 @@ import MiniFooter from "../components/MiniFooter";
 import FloatingLines from "../components/FloatingLines";
 import { footerLinks } from "../constants";
 const newLinks = ["Home", "About", "Contact"];
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 const Contact = () => {
+  useGSAP(() => {
+    gsap.to("#contact-section", {
+      x: 0,
+      stagger: 0.2,
+      opacity: 1,
+    });
+  }, []);
   return (
     <main className="relative">
       <NavBar containerClass="bg-black-200" links={newLinks} />
@@ -20,9 +29,11 @@ const Contact = () => {
           parallax={true}
         />
       </div>
-      <section className="h-screen max-md:h-[904px] absolute left-0 top-0 z-1 bg-[#0000008c] 
-      px-8 flex max-md:flex-col gap-2 items-center justify-between">
-        <div className="flex-1">
+      <section
+        className="h-screen max-md:h-[904px] absolute left-0 top-0 z-1 bg-[#0000008c] 
+      px-8 flex max-md:flex-col gap-2 items-center justify-between"
+      >
+        <div id="contact-section" className="flex-1 -translate-x-20 opacity-0 ">
           <span className="text-main font-bold">Availability </span>
           <h3 className="text-8xl font-bold max-md:text-3xl">
             Let's build <br />
@@ -56,7 +67,11 @@ const Contact = () => {
             </span>
           </div>
         </div>
-        <form action="#" className="bg-[#1a1a1a] p-8 max-sm:p-6 rounded-md flex-1">
+        <form
+        id="contact-section"
+          action="#"
+          className=" translate-x-20 opacity-0 bg-[#1a1a1a] p-8 max-sm:p-6 rounded-md flex-1"
+        >
           <div className="flex gap-4 w-full">
             <div className="flex flex-col gap-2 w-full">
               <label htmlFor="name" className="font-bold">

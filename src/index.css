@@ -20,6 +20,15 @@
   html {
     scroll-behavior: smooth;
   }
+
+  ::-webkit-scrollbar {
+    @apply bg-black-200 w-2;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-black;
+  }
+
   .hero-text-outline {
     -webkit-text-stroke: 1px #ffffff66;
     font-family: Arial, Helvetica, sans-serif;
@@ -30,17 +39,33 @@
     animation: translate 1s infinite linear alternate;
   }
 
-  .scroll-hidden {
-    scrollbar-width: none;
+  .grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
+    gap: 10px;
   }
 
   .mask-fade {
     mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
   }
+
   .mask-fade-bottom {
-    background: linear-gradient(to bottom,  #000000b4 , #0000005e 65%, transparent);
+    background: linear-gradient(to bottom, #000000b4, #0000005e 65%, transparent);
   }
+
   .mask-fade-top {
-    background: linear-gradient(to top,  #000000 , #00000033 15%, transparent 20% , transparent);
+    background: linear-gradient(to top, #000000, #00000033 15%, transparent 20%, transparent);
+  }
+
+  .project.active {
+    @apply flex-1;
+  }
+
+  .project.active span {
+    @apply hidden;
+  }
+
+  .project.active .information {
+    @apply opacity-100 !important;
   }
 }

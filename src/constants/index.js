@@ -92,7 +92,7 @@ export const projects_two = [
   },
   {
     name: "REST API",
-    description: "RESTful API built with Flask, implementing CRUD operations, authentication, and JSON responses following REST architectural principles.",
+    description: "RESTful API built with Flask, implementing CRUD operations, and JSON responses following REST architectural principles.",
     img: "rest.jpg"
   }
 ];
