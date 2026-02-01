@@ -47,7 +47,7 @@ const Projects = () => {
               <div
                 className="w-screen h-full absolute inset-0 bg-contain"
                 style={{
-                  backgroundImage: `url(/public/assets/projects/${img})`,
+                  backgroundImage: `url(/assets/projects/${img})`,
                 }}
               ></div>
               <div className="w-full h-full absolute inset-0 bg-[#000000a9] z-[99]"></div>
